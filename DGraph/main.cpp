@@ -17,7 +17,7 @@ int main(int argc, const char * argv[])
     graph.addEdge("Steve", "James", "friends");
     graph.addEdge("James", "Aldo", "friends");
     
-    auto result = graph.shortestPath("Nick", "Aldo");
+    auto result = graph.path("Nick", "Aldo");
     
     for (auto e: result)
         std::cout << e << std::endl;

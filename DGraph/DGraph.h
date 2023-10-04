@@ -63,7 +63,8 @@ public:
         return neighbors;
     }
     
-    const std::vector<T> shortestPath(T start, T end, EdgeType edgeName = EdgeType())
+    /// Get a valid path from a source edge to another edge. This does not guarantee the shortest path.
+    const std::vector<T> path(T start, T end, EdgeType edgeName = EdgeType())
     {
         std::queue<T> q;
         std::unordered_map<T, bool> visited;
